@@ -17,6 +17,11 @@ h = 525
 # background color
 bgcolor = "#FFFFFF"
 
+
+
+
+
+
 # ----------- CENTER FORM ------------- #
 root.overrideredirect(1) # remove border
 ws = root.winfo_screenwidth()
@@ -24,6 +29,12 @@ hs = root.winfo_screenheight()
 x = (ws-w)/2
 y = (hs-h)/2
 root.geometry("%dx%d+%d+%d" % (w, h, x, y))
+
+
+
+
+
+
 
 # ----------- HEADER ------------- #
 
@@ -46,9 +57,22 @@ def close_win():
 
 close_button['command'] = close_win
 
+
+
+
+
+
+
 # ----------- END HEADER ------------- #
 
 mainframe = tk.Frame(root, width=w, height=h)
+
+
+
+
+
+
+
 
 # ----------- Login Page ------------- #
 loginframe = tk.Frame(mainframe, width=w, height=h)
@@ -112,6 +136,16 @@ def login():
 login_button['command'] = login
 
 
+
+
+
+
+
+
+
+
+
+
 # ----------- Register Page ------------- #
 
 registerframe = tk.Frame(mainframe, width=w, height=h)
@@ -137,9 +171,6 @@ gender = StringVar()
 gender.set('Male')
 male_radiobutton = tk.Radiobutton(radiosframe, text='Male', font=('Verdana',14), bg=bgcolor, variable=gender, value='Male')
 female_radiobutton = tk.Radiobutton(radiosframe, text='Female', font=('Verdana',14), bg=bgcolor, variable=gender, value='Female')
-
-selectimage_frame = tk.Frame(register_contentframe, bg=bgcolor)
-selectimage_button = tk.Button(selectimage_frame, text='select image', bg='#fff')
 
 
 register_button = tk.Button(register_contentframe,text="Register", font=('Verdana',16), bg='#2980b9',fg='#fff', padx=25, pady=10, width=25)
@@ -176,7 +207,18 @@ register_button.grid(row=7, column=0, columnspan=2, pady=20)
 go_login_label.grid(row=8, column=0, columnspan=2, pady=10)
 
 
+
+
+
+
+
+
+
 # --------------------------------------- #
+
+
+
+
 
 
 # create a function to display the login frame

@@ -137,7 +137,7 @@ class mainform:
 
         register_button.grid(row=7, column=0, columnspan=2, pady=20)
 
-
+#------------------------Check if name already exist--------------------#
         # def check_username(name):
         #     name = name_entry_rg.get().strip()
         #     vals = (name,)
